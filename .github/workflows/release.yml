@@ -32,6 +32,21 @@ jobs:
              module.json > module.tmp.json
           mv module.tmp.json module.json
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Foundry VTT CLI
+        run: npm install -g @foundryvtt/foundryvtt-cli
+
+      - name: Compile compendium packs
+        run: |
+          fvtt package pack --id necromancer-class-valdas --type Module --yaml \
+            --in packs/_source/class-features --out packs class-features
+          fvtt package pack --id necromancer-class-valdas --type Module --yaml \
+            --in packs/_source/thralls --out packs thralls
+
       - name: Build module.zip
         run: |
           zip -r module.zip \
