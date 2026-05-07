@@ -1,0 +1,215 @@
+_id: valdNecChrnlTch1
+name: Charnel Touch
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 200000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>You can draw upon an inner nexus of necromantic power. You have
+      a pool of <strong>Charnel Touch points</strong> equal to <strong>5
+      &times; your Necromancer level</strong> that replenishes when you
+      finish a Long Rest.</p>
+
+      <p>As a <strong>Magic action</strong>, you can channel this negative
+      energy through your touch. Choose a number of Charnel Touch points
+      to expend, up to a maximum of <strong>5 &times; your Proficiency
+      Bonus</strong>, and make a melee spell attack against one creature
+      within reach. On a hit, the target takes Necrotic damage equal to
+      the number of points expended. This damage is doubled without
+      expending additional points if the attack roll scores a Critical
+      Hit. If the spell attack misses, the Charnel Touch points aren't
+      expended.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The <strong>Strike</strong> activity rolls a melee spell attack
+      and deals necrotic damage equal to the number of points you choose
+      to expend (Points to Spend slider).</p>
+      <p>The <strong>Heal Undead</strong> activity is also bundled here
+      for convenience: in the 2024 ruleset, healing undead with Charnel
+      Touch points is described under <em>Thralls</em> ("Healing your
+      Thralls" sub-feature). This module currently exposes it from the
+      Charnel Touch sheet for ergonomics; mechanics are identical.</p>
+      </section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: '5 * @classes.necromancer.levels'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 1
+  properties: []
+  requirements: ''
+  activities:
+    valdNecChrTAtk01:
+      _id: valdNecChrTAtk01
+      type: attack
+      name: Strike
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: 'min(5 * @prof, @classes.necromancer.levels * 5 - @item.uses.spent)'
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling:
+              mode: amount
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        value: 5
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      attack:
+        ability: int
+        bonus: ''
+        critical:
+          threshold: null
+          damage: ''
+        flat: false
+        type:
+          value: melee
+          classification: spell
+      damage:
+        critical:
+          bonus: '@scaling'
+        includeBase: true
+        parts:
+          - types:
+              - necrotic
+            custom:
+              enabled: true
+              formula: '@scaling'
+            scaling:
+              number: 1
+              mode: ''
+            number: null
+            denomination: ''
+            bonus: ''
+      appliedEffects: []
+    valdNecChrTHeal1:
+      _id: valdNecChrTHeal1
+      type: heal
+      name: Heal Undead
+      img: ''
+      sort: 100000
+      activation:
+        type: action
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: 'min(5 * @prof, @classes.necromancer.levels * 5 - @item.uses.spent)'
+        spellSlot: false
+        targets:
+          - type: itemUses
+            value: '1'
+            target: ''
+            scaling:
+              mode: amount
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: touch
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: creature
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      healing:
+        number: null
+        denomination: ''
+        types:
+          - healing
+        custom:
+          enabled: true
+          formula: '@scaling'
+        scaling:
+          number: 1
+          mode: ''
+        bonus: ''
+      appliedEffects: []
+  enchant: {}
+  identifier: charnel-touch
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecChrnlTch1'

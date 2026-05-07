@@ -1,0 +1,113 @@
+_id: valdNecLichdom01
+name: Lichdom
+type: feat
+img: icons/svg/skull.svg
+folder: valdNecCFolder01
+sort: 900000
+ownership:
+  default: 0
+flags: {}
+effects:
+  - _id: valdNecLichdmAE1
+    name: Lichdom
+    img: icons/svg/skull.svg
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: ''
+    statuses: []
+    description: '<p>Lich form: creature type Undead, Truesight 120 ft.</p>'
+    flags: {}
+    changes:
+      - { key: system.details.type.value, mode: 5, value: undead, priority: null }
+      - { key: system.attributes.senses.truesight, mode: 5, value: '120', priority: null }
+    tint: null
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!valdNecLichdom01.valdNecLichdmAE1'
+system:
+  description:
+    value: >
+      <p>You unlock the pinnacle of necromantic prowess, through which
+      you conquer death itself: <strong>The Rite of Lichdom</strong>.</p>
+
+      <p><strong>Becoming a Lich.</strong> The Rite of Lichdom is a
+      ritual that you can perform over the course of 30 days in an
+      isolated location. Once completed, your soul is bound to a
+      <strong>spirit jar</strong> and you become a lich, an Undead of
+      incredible power. You gain the following benefits, as well as
+      those granted by your Necromancer subclass.</p>
+
+      <p><strong>Creature Type.</strong> You are <strong>Undead</strong>.
+      You are immune to any effect that turns Undead.</p>
+
+      <p><strong>Spirit Jar.</strong> A spirit jar is an object that
+      houses a lich's soul, safeguarding its immortality. If you drop to
+      0 hit points, your body crumbles to dust and you reform after
+      1d4 + 1 days, reviving with all of your hit points. Your new body
+      coalesces in an unoccupied space within 5 feet of your spirit jar.
+      The new body is identical in every way to the one that was
+      destroyed but has none of the original's equipment.</p>
+
+      <p>Every spirit jar has a weakness — a critical flaw by which it
+      can be destroyed, allowing its lich to be slain permanently.
+      Discuss with your GM the form your spirit jar takes and the
+      weakness it possesses.</p>
+
+      <p><strong>Truesight.</strong> You have <strong>Truesight</strong>
+      with a range of <strong>120 feet</strong>.</p>
+
+      <p><strong>Undead Immunities.</strong> You have immunity to
+      <strong>Necrotic and Poison damage</strong> and to the
+      <strong>Exhaustion and Poisoned conditions</strong>.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>An Active Effect on this feature applies the
+      <strong>Undead</strong> creature type and <strong>Truesight 120
+      ft</strong> automatically. The L20 <em>Lichdom — Undead
+      Immunities</em> Trait advancement grants the four immunities
+      (Necrotic + Poison damage, Exhaustion + Poisoned conditions). The
+      30-day ritual itself, the spirit jar reformation, and "Turn
+      Undead" immunity are descriptive — narrate at the table.</p>
+      </section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 20
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: lichdom
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecLichdom01'

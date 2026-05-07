@@ -1,0 +1,121 @@
+_id: valdNecAnimDead1
+name: Animate Dead (Necromancer)
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 550000
+ownership:
+  default: 0
+flags:
+  necromancer-class-valdas:
+    feature: animate-dead-necromancer
+effects: []
+system:
+  description:
+    value: >
+      <p>You always have the <em>animate dead</em> spell prepared. It is
+      granted alongside this feature; check your Spells tab.</p>
+
+      <p>When you cast <em>animate dead</em>, the following Necromancer
+      modifications apply:</p>
+
+      <ul>
+      <li>Its <strong>casting time is an action</strong> instead of 1 minute.</li>
+      <li>You can also create a <strong>Spirit</strong> using the spell.</li>
+      <li>You can <strong>reanimate the corpse of any type of Medium or
+      Small creature</strong> that isn't Undead, instead of only Humanoids.
+      The resulting Undead always uses the statistics of a
+      <strong>Skeleton</strong>, <strong>Spirit</strong>, or
+      <strong>Zombie</strong>.</li>
+      </ul>
+
+      <p>Undead created by <em>animate dead</em> count as your thralls
+      and obey your commands per the rules of your <em>Thralls</em>
+      feature. If creating a thrall via <em>animate dead</em> would put
+      you over your CR or thrall-count limit, you can immediately sever
+      your connection to existing thralls to stay within those limits.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The bundled <em>Cast Animate Dead</em> activity casts the
+      module's customised version of the spell — cast time = action,
+      with Skeleton / Spirit / Zombie summon profiles — without leaving
+      this feature card. The spell is also prepared on your Spells
+      tab; either entry point works.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 5
+  properties: []
+  requirements: ''
+  activities:
+    valdNecADcastA01:
+      _id: valdNecADcastA01
+      type: utility
+      name: Cast Animate Dead
+      img: ''
+      sort: 0
+      activation:
+        type: action
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: self
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      appliedEffects: []
+  enchant: {}
+  identifier: animate-dead-necromancer
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecAnimDead1'

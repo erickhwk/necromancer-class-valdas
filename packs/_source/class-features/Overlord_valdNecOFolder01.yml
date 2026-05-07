@@ -1,0 +1,9 @@
+_id: valdNecOFolder01
+name: Overlord
+type: Item
+folder: valdNecSFolder01
+sorting: a
+sort: 100000
+color: null
+flags: {}
+_key: '!folders!valdNecOFolder01'

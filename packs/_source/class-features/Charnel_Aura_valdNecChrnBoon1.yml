@@ -1,0 +1,346 @@
+_id: valdNecChrnBoon1
+name: Charnel Aura
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecOFolder01
+sort: 100000
+ownership:
+  default: 0
+flags: {}
+effects:
+  - _id: valdNecChrBnAE01
+    name: Charnel Aura (+1)
+    img: icons/svg/upgrade.svg
+    transfer: false
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 6
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: ''
+    statuses: []
+    description: '<p>+1 to D20 Tests (attack rolls, ability checks, saves), damage rolls, and AC until the start of the necromancer''s next turn.</p>'
+    flags:
+      dae:
+        specialDuration:
+          - turnStartSource
+    changes:
+      - { key: system.bonuses.mwak.attack, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.mwak.damage, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.rwak.attack, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.rwak.damage, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.msak.attack, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.msak.damage, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.rsak.attack, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.rsak.damage, mode: 2, value: '+1', priority: null }
+      - { key: system.attributes.ac.bonus, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.abilities.check, mode: 2, value: '+1', priority: null }
+      - { key: system.bonuses.abilities.save, mode: 2, value: '+1', priority: null }
+    tint: '#ffffff'
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!valdNecChrnBoon1.valdNecChrBnAE01'
+  - _id: valdNecChrBnAE02
+    name: Charnel Aura (+2)
+    img: icons/svg/upgrade.svg
+    transfer: false
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 6
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: ''
+    statuses: []
+    description: '<p>+2 to D20 Tests, damage rolls, and AC until the start of the necromancer''s next turn.</p>'
+    flags:
+      dae:
+        specialDuration:
+          - turnStartSource
+    changes:
+      - { key: system.bonuses.mwak.attack, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.mwak.damage, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.rwak.attack, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.rwak.damage, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.msak.attack, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.msak.damage, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.rsak.attack, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.rsak.damage, mode: 2, value: '+2', priority: null }
+      - { key: system.attributes.ac.bonus, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.abilities.check, mode: 2, value: '+2', priority: null }
+      - { key: system.bonuses.abilities.save, mode: 2, value: '+2', priority: null }
+    tint: '#ffffff'
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!valdNecChrnBoon1.valdNecChrBnAE02'
+  - _id: valdNecChrBnAE03
+    name: Charnel Aura (+3)
+    img: icons/svg/upgrade.svg
+    transfer: false
+    disabled: false
+    duration:
+      startTime: null
+      seconds: 6
+      combat: null
+      rounds: 1
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: ''
+    statuses: []
+    description: '<p>+3 to D20 Tests, damage rolls, and AC until the start of the necromancer''s next turn.</p>'
+    flags:
+      dae:
+        specialDuration:
+          - turnStartSource
+    changes:
+      - { key: system.bonuses.mwak.attack, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.mwak.damage, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.rwak.attack, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.rwak.damage, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.msak.attack, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.msak.damage, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.rsak.attack, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.rsak.damage, mode: 2, value: '+3', priority: null }
+      - { key: system.attributes.ac.bonus, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.abilities.check, mode: 2, value: '+3', priority: null }
+      - { key: system.bonuses.abilities.save, mode: 2, value: '+3', priority: null }
+    tint: '#ffffff'
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!valdNecChrnBoon1.valdNecChrBnAE03'
+system:
+  description:
+    value: >
+      <p>As a Bonus Action, you can expend <strong>5 or more</strong>
+      Charnel Touch points to create an empowering aura in a
+      <strong>30-foot Emanation</strong> originating from you until the
+      start of your next turn.</p>
+
+      <p>Undead you control within the Emanation gain a bonus to
+      <strong>D20 Tests</strong> (attack rolls, ability checks, and
+      saving throws), <strong>damage rolls</strong>, and <strong>AC</strong>.
+      This bonus equals <strong>+1 for every 5 Charnel Touch points
+      expended</strong>, to a maximum of <strong>+3</strong>
+      (5/10/15 points).</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The 2024 rule is an emanation that automatically affects all
+      undead you control within 30 ft. This module exposes the buff via
+      three activities — <em>Aura Pulse (+1) / (+2) / (+3)</em> — that
+      respectively consume 5 / 10 / 15 Charnel Touch points. Target each
+      thrall token within the aura, then click <em>Apply Effect</em> on
+      the chat card to apply the 1-round buff. The effect grants the
+      D20 Test bonus (attack/check/save), damage, and AC.</p>
+      <p><strong>Recommended modules for auto-expiration:</strong>
+      <em>Dynamic Active Effects (DAE)</em> + <em>Times-Up</em>. The
+      bundled Active Effects carry <code>flags.dae.specialDuration:
+      ["turnStartSource"]</code>, which DAE uses to remove them at the
+      start of the necromancer's next turn. Without DAE, the effect
+      will be flagged as expired but Foundry will not delete it —
+      remove it manually from each thrall's sheet.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: subclass
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: Necromancer 3 (Overlord)
+  activities:
+    valdNecChrBnAct1:
+      _id: valdNecChrBnAct1
+      type: utility
+      name: Aura Pulse (+1)
+      img: ''
+      sort: 100000
+      activation:
+        type: bonus
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+        targets:
+          - type: itemUses
+            target: charnel-touch
+            value: '5'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        value: 1
+        concentration: false
+        override: false
+      effects:
+        - _id: valdNecChrBnAE01
+      range:
+        override: false
+        units: ft
+        value: 30
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: Thralls within 30 ft
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      appliedEffects: []
+    valdNecChrBnAct2:
+      _id: valdNecChrBnAct2
+      type: utility
+      name: Aura Pulse (+2)
+      img: ''
+      sort: 200000
+      activation:
+        type: bonus
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+        targets:
+          - type: itemUses
+            target: charnel-touch
+            value: '10'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        value: 1
+        concentration: false
+        override: false
+      effects:
+        - _id: valdNecChrBnAE02
+      range:
+        override: false
+        units: ft
+        value: 30
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: Thralls within 30 ft
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      appliedEffects: []
+    valdNecChrBnAct3:
+      _id: valdNecChrBnAct3
+      type: utility
+      name: Aura Pulse (+3)
+      img: ''
+      sort: 300000
+      activation:
+        type: bonus
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+        targets:
+          - type: itemUses
+            target: charnel-touch
+            value: '15'
+            scaling:
+              mode: ''
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: round
+        value: 1
+        concentration: false
+        override: false
+      effects:
+        - _id: valdNecChrBnAE03
+      range:
+        override: false
+        units: ft
+        value: 30
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: ''
+          type: ally
+          special: Thralls within 30 ft
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      appliedEffects: []
+  enchant: {}
+  identifier: charnel-aura
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecChrnBoon1'

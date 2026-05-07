@@ -1,0 +1,103 @@
+_id: valdNecCritSpel1
+name: Critical Spellcasting
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 600000
+ownership:
+  default: 0
+flags:
+  necromancer-class-valdas:
+    feature: critical-spellcasting
+effects:
+  - _id: valdNecCritSpAE1
+    name: Critical Spellcasting (Spell Crit Threshold)
+    img: icons/svg/upgrade.svg
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: ''
+    statuses: []
+    description: ''
+    flags: {}
+    changes:
+      - key: flags.dnd5e.spellCriticalThreshold
+        value: '19'
+        mode: 5
+        priority: null
+    tint: null
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!valdNecCritSpel1.valdNecCritSpAE1'
+system:
+  description:
+    value: >
+      <p>Your potent Necromancy grants you the following benefits.</p>
+
+      <p><strong>Critical Failures.</strong> When a creature rolls a 1
+      on the d20 for a saving throw against one of your spells, it
+      suffers a Critical Failure. It fails the save regardless of its
+      modifiers or the spell save DC. If the spell deals damage, you
+      roll all of the spell's damage dice twice and add them together,
+      then add any relevant modifiers. This additional damage applies
+      only to the creature that rolled a 1.</p>
+
+      <p><strong>Improved Critical.</strong> Your spell attacks score
+      a critical hit on a roll of 19 or 20 on the d20.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p><em>Improved Critical</em> (lowered spell-attack crit threshold
+      to 19+) is applied through the Active Effect attached to this
+      feature.</p>
+      <p><em>Critical Failures</em> are detected by the module's JS hook:
+      when a creature rolls a natural 1 on a save against one of your
+      spells, a chat card titled <strong>Critical Spellcasting</strong>
+      announces the auto-fail and posts the additional damage rolled
+      from doubled spell dice. Click the chat card's <em>Apply</em>
+      button to deal the extra damage to the target. Apply the spell's
+      base damage in full (not half) on the original spell card, since
+      the save auto-fails.</p>
+      <p>The 14th-level <em>Improved Critical Spellcasting</em>
+      separately upgrades both the crit threshold (to 18+) and the
+      Critical Failure threshold (to a roll of 1 or 2).</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 5
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: critical-spellcasting
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecCritSpel1'

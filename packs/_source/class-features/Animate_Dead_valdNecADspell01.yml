@@ -1,0 +1,189 @@
+_id: valdNecADspell01
+name: Animate Dead
+type: spell
+img: icons/svg/skull.svg
+folder: valdNecCFolder01
+sort: 550000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >-
+      <p><em>Necromancer-modified version. Casting time, target choice,
+      and creature options are altered per the class's Animate Dead
+      feature.</em></p>
+
+      <p>Choose a pile of bones, a corpse, or a recent corpse of a
+      Medium or Small creature (any type, not just Humanoid) within
+      range. The target becomes one of your <em>thralls</em>:</p>
+
+      <ul>
+      <li>A <strong>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecSkelet001]{Skeleton}</strong>
+      if you chose a pile of bones.</li>
+      <li>A <strong>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecZombie001]{Zombie}</strong>
+      if you chose a corpse.</li>
+      <li>A <strong>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecSpirit001]{Spirit}</strong>
+      if you chose the recent corpse (dead within the last hour) of a
+      creature you can use as a Spirit.</li>
+      </ul>
+
+      <p>The undead created by this spell is your thrall and obeys you
+      indefinitely under the rules of your <em>Thralls</em> class
+      feature (it counts toward your CR/thrall-count limits). The 24-hour
+      control window of the standard <em>animate dead</em> spell does
+      <em>not</em> apply.</p>
+
+      <p><strong>Using a Higher-Level Spell Slot.</strong> You animate
+      <strong>two additional Undead creatures for each spell slot level
+      above 3</strong>. Each must come from a different corpse or pile
+      of bones.</p>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    rules: '2024'
+    license: Fan Content Policy
+    revision: 1
+  activation:
+    type: action
+    condition: ''
+    value: 1
+  duration:
+    value: ''
+    units: inst
+  target:
+    affects:
+      type: object
+      count: '@item.level * 2 - 5'
+      choice: false
+      special: ''
+    template:
+      units: ''
+      contiguous: false
+      type: ''
+  range:
+    value: '10'
+    units: ft
+    special: ''
+  uses:
+    max: ''
+    recovery: []
+    spent: 0
+  level: 3
+  school: nec
+  properties:
+    - vocal
+    - somatic
+    - material
+  materials:
+    value: a drop of blood, a piece of flesh, and a pinch of bone dust
+    consumed: false
+    cost: 0
+    supply: 0
+  preparation:
+    mode: prepared
+    prepared: false
+  activities:
+    valdNecADactSumn:
+      _id: valdNecADactSumn
+      type: summon
+      activation:
+        type: action
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        targets: []
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: true
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        override: false
+        concentration: false
+      range:
+        override: false
+        units: ft
+        value: 10
+      target:
+        prompt: true
+        template:
+          contiguous: false
+          units: ft
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+          special: ''
+        override: false
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        disposition: true
+        proficiency: false
+        saves: false
+        ability: ''
+      profiles:
+        - _id: valdNecADprfSkel
+          count: ''
+          name: Skeleton (from a pile of bones)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecSkelet001
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecADprfSpir
+          count: ''
+          name: Spirit (from a recent corpse)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecSpirit001
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecADprfZomb
+          count: ''
+          name: Zombie (from a corpse)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecZombie001
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        identifier: ''
+        mode: ''
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      sort: 0
+      name: ''
+      img: ''
+      appliedEffects: []
+  identifier: animate-dead
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecADspell01'

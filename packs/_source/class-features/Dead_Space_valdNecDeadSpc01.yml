@@ -1,0 +1,70 @@
+_id: valdNecDeadSpc01
+name: Dead Space
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 400000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>You gain an extradimensional space that can hold up to <strong>12
+      Medium or smaller corpses, piles of bones, or Undead creatures</strong>.
+      The extradimensional space is linked to an item of your choice, such
+      as a bag, a cloak, or a backpack.</p>
+
+      <p>As a <strong>Magic action</strong>, you can use the linked item to
+      place a corpse, pile of bones, or willing Undead creature in the
+      extradimensional space, or to dump out contents of your choice from
+      it. The contents land in spaces of your choice within 5 feet of you,
+      or as near to you as possible if those spaces are occupied.</p>
+
+      <p>Thralls stored in your Dead Space <strong>count toward the total
+      number of thralls under your control</strong>.</p>
+
+      <p><strong>Linking an Item.</strong> You can link any item you can
+      carry to the extradimensional space by performing a ritual over the
+      course of 1 hour, which can be done during a Short Rest. The previous
+      item linked to the space becomes disconnected when you link a new
+      one.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>This feature is currently descriptive. A future module update
+      will add a functional Container item with the appropriate magical-
+      item flags and capacity tracking.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 2
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: dead-space
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecDeadSpc01'

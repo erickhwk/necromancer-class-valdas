@@ -1,0 +1,71 @@
+_id: valdNecUndyServ1
+name: Undying Servitude
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 800000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>When one of your thralls is reduced to 0 Hit Points, you can
+      take a Reaction to cause it to drop to <strong>1 Hit Point</strong>
+      instead and regain Hit Points equal to <strong>twice your
+      Necromancer level</strong>.</p>
+
+      <p>Once you use this feature, you can't use it again until you
+      finish a Long Rest. You can also restore your use of it by
+      <strong>expending a level 3+ spell slot</strong> (no action
+      required).</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The 1/long-rest charge is tracked via Limited Uses on this
+      feature. Hit-point restoration on the thrall is applied manually:
+      set the thrall's HP to <code>1 + (2 × @classes.necromancer.levels)</code>
+      via its sheet (e.g., 37 at necromancer L18). The slot-spend
+      recovery is also manual — when you expend a level 3+ slot for
+      this purpose, mark the Uses back to 0/1 on the feature card.</p>
+      </section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: lr
+        type: recoverAll
+        formula: ''
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 18
+  properties: []
+  requirements: ''
+  activation:
+    type: reaction
+    cost: 1
+    condition: When a controlled thrall is reduced to 0 hit points but not destroyed outright
+  activities: {}
+  enchant: {}
+  identifier: undying-servitude
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecUndyServ1'

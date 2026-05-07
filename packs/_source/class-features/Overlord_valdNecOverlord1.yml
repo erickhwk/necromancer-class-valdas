@@ -1,0 +1,180 @@
+_id: valdNecOverlord1
+name: Overlord
+type: subclass
+img: icons/svg/skull.svg
+folder: valdNecFolder001
+sort: 200000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>There are few ambitions the common man fantasizes about more
+      than the power to rule. From the ignoble peasant to the haughty
+      nobility, many dream of a world in which they are in charge.</p>
+
+      <p>Some necromancers, known as <em>overlords</em>, see their magic
+      as an opportunity to accomplish this common dream. Overlords seek
+      control both on and off the battlefield, using dark magics to
+      bolster their allies as well as manipulate their enemies.</p>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  identifier: overlord
+  classIdentifier: necromancer
+  spellcasting:
+    progression: none
+    ability: ''
+    preparation:
+      formula: ''
+  advancement:
+    - _id: OverAdvL3Grnts01
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.necromancer-class-valdas.class-features.Item.valdNecChrnBoon1
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      title: Overlord Features
+      icon: ''
+    - _id: OverAdvL3Splls01
+      type: ItemGrant
+      level: 3
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplBane000000
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplCommand000
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplDetectThou
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplHoldPerson
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      title: Overlord Spells (always prepared)
+      icon: ''
+    - _id: OverAdvL5Splls01
+      type: ItemGrant
+      level: 5
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplHaste00000
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplSlow000000
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      title: Overlord Spells (always prepared)
+      icon: ''
+    - _id: OverAdvL6Grnts01
+      type: ItemGrant
+      level: 6
+      configuration:
+        items:
+          - uuid: Compendium.necromancer-class-valdas.class-features.Item.valdNecDespDisc1
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      title: Overlord Features
+      icon: ''
+    - _id: OverAdvL7Splls01
+      type: ItemGrant
+      level: 7
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplCompulsion
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplConfusion0
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      title: Overlord Spells (always prepared)
+      icon: ''
+    - _id: OverAdvL9Splls01
+      type: ItemGrant
+      level: 9
+      configuration:
+        items:
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplDominatePe
+            optional: false
+          - uuid: Compendium.dnd5e.spells24.Item.phbsplGeas000000
+            optional: false
+        optional: false
+        spell:
+          ability: []
+          preparation: always
+          uses:
+            max: ''
+            per: ''
+            requireSlot: false
+      value: {}
+      title: Overlord Spells (always prepared)
+      icon: ''
+    - _id: OverAdvL10Grnt01
+      type: ItemGrant
+      level: 10
+      configuration:
+        items:
+          - uuid: Compendium.necromancer-class-valdas.class-features.Item.valdNecSacThral1
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      title: Overlord Features
+      icon: ''
+    - _id: OverAdvL20Grnt01
+      type: ItemGrant
+      level: 20
+      configuration:
+        items:
+          - uuid: Compendium.necromancer-class-valdas.class-features.Item.valdNecTyrant001
+            optional: false
+        optional: false
+        spell: null
+      value: {}
+      title: Overlord Features
+      icon: ''
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecOverlord1'

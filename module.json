@@ -1,0 +1,95 @@
+{
+  "id": "necromancer-class-valdas",
+  "title": "Necromancer (Valda's Spires of Secrets)",
+  "description": "Adds the Necromancer class and the Overlord Grave Ambition subclass from Valda's Spires of Secrets (2024 ruleset) to D&D 5e. Includes the seven undead thralls as actors, the Necromancer-modified Animate Dead spell with Skeleton/Spirit/Zombie summon profiles, and targeted JS automation for Critical Spellcasting and Dark Arcana. Recommends DAE + Times-Up for round-based Active Effect expiration.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "erickhwk",
+      "url": "https://github.com/erickhwk"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0",
+          "verified": "5.3.2"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "dae",
+        "type": "module",
+        "reason": "Required to auto-expire round-based Active Effects (Charnel Aura)."
+      },
+      {
+        "id": "times-up",
+        "type": "module",
+        "reason": "Companion to DAE that advances world time during combat for accurate AE expiration."
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "class-features",
+      "label": "Necromancer Class & Features",
+      "path": "packs/class-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": ["class", "subclass", "feat"]
+        }
+      }
+    },
+    {
+      "name": "thralls",
+      "label": "Necromancer Thralls",
+      "path": "packs/thralls",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Necromancer (Valda's)",
+      "sorting": "m",
+      "packs": ["class-features", "thralls"]
+    }
+  ],
+  "url": "https://github.com/erickhwk/necromancer-class-valdas",
+  "manifest": "https://github.com/erickhwk/necromancer-class-valdas/releases/latest/download/module.json",
+  "download": "https://github.com/erickhwk/necromancer-class-valdas/releases/latest/download/module.zip",
+  "bugs": "https://github.com/erickhwk/necromancer-class-valdas/issues"
+}

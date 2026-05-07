@@ -1,0 +1,100 @@
+_id: valdNecTyrant001
+name: 'Lichdom: Tyrant'
+type: feat
+img: icons/svg/skull.svg
+folder: valdNecOFolder01
+sort: 400000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>You have reached the pinnacle of necromancy and transformed
+      yourself into a lich. Your desire for control has warped your
+      transformation, turning you into a <strong>tyrant lich</strong>.
+      Your flesh and bone rapidly decay, reducing your features to
+      nothing more than two glowing dots beneath your hood.</p>
+
+      <p>You gain the following features in addition to the
+      <em>Lichdom</em> feature.</p>
+
+      <p><strong>Immortal Rule.</strong> If you drop to 0 hit points,
+      you can choose to <em>possess a nearby body</em> instead of
+      beginning the process of reforming at your phylactery. Choose an
+      unconscious humanoid or the corpse of one that has died within
+      the last minute that is within 120 feet of you to possess (a
+      creature warded by a <em>protection from evil and good</em> or
+      <em>magic circle</em> spell can't be possessed).</p>
+
+      <p>Once you possess a body, you control it. Your game statistics
+      are replaced by the statistics of the creature, though you retain
+      your alignment and your Intelligence, Wisdom, and Charisma scores.
+      If the body has 0 hit points when you possess it, its type
+      becomes undead and it regains 50 hit points, up to its hit point
+      maximum. You retain the benefit of your own class features. If
+      the target has any class levels, you can't use any of its class
+      features.</p>
+
+      <p>If you possess the body of an unconscious creature, the
+      creature makes a Charisma saving throw against your spell save
+      DC after 8 hours, and it repeats the save every 8 hours
+      thereafter until the effect ends. On a success, you are ejected
+      from the body and begin the process of reforming at your
+      phylactery. You are also ejected if the body dies or you choose
+      to leave it as an action. Once you've possessed a creature in
+      this way, you can't possess it again using this feature.</p>
+
+      <p><strong>Domination Spells.</strong> You can expend Charnel
+      Touch points to cast one of the spells from the following table
+      <strong>without a spell slot</strong>:</p>
+
+      <ul>
+      <li><em>command</em> — <strong>15 points</strong></li>
+      <li><em>dominate beast</em> — <strong>20 points</strong></li>
+      <li><em>dominate person</em> — <strong>30 points</strong></li>
+      <li><em>geas</em> — <strong>30 points</strong></li>
+      <li><em>dominate monster</em> — <strong>60 points</strong></li>
+      </ul>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>This feature is currently descriptive only. The Possession
+      mechanic and the Domination Spells (consume Charnel Touch points
+      to cast <em>command / dominate beast / dominate person / geas /
+      dominate monster</em>) are not automated; resolve them manually
+      until a future module update adds JS activities for each spell
+      cost.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: subclass
+    subtype: ''
+  prerequisites:
+    level: 20
+  properties: []
+  requirements: Necromancer 20 (Overlord)
+  activities: {}
+  enchant: {}
+  identifier: lichdom-tyrant
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecTyrant001'

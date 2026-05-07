@@ -1,0 +1,69 @@
+_id: valdNecSacThral1
+name: Sacrificial Thralls
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecOFolder01
+sort: 300000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>When you're <strong>hit by an attack roll</strong>, you can
+      take a Reaction to force that attack to instead hit one of your
+      thralls that is within <strong>5 feet of you</strong>.</p>
+
+      <p>Once you use this feature, you can't do so again until you
+      finish a Short or Long Rest. You can also restore your use of
+      it by <strong>expending a level 2+ spell slot</strong> (no
+      action required).</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The 1/rest charge is tracked via Limited Uses on this feature
+      and recovers on short or long rest. Resolve the redirected-attack
+      mechanic manually at the table (move the attack target from you
+      to a thrall token within 5 ft). The slot-spend recovery (level 2+)
+      is also manual — when you expend a slot for this purpose, mark
+      the Uses back to 0/1 on the feature card.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: '1'
+    spent: 0
+    recovery:
+      - period: sr
+        type: recoverAll
+        formula: ''
+  type:
+    value: subclass
+    subtype: ''
+  prerequisites:
+    level: 10
+  properties: []
+  requirements: Necromancer 10 (Overlord)
+  activation:
+    type: reaction
+    cost: 1
+    condition: When you are targeted by an attack
+  activities: {}
+  enchant: {}
+  identifier: sacrificial-thralls
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecSacThral1'

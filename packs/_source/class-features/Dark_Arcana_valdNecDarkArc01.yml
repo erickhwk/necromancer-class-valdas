@@ -1,0 +1,115 @@
+_id: valdNecDarkArc01
+name: Dark Arcana
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 500000
+ownership:
+  default: 0
+flags:
+  necromancer-class-valdas:
+    feature: dark-arcana
+effects: []
+system:
+  description:
+    value: >
+      <p>As a bonus action, you can expend a spell slot to replenish your
+      Charnel Touch pool. The pool regains points equal to your
+      <strong>Intelligence modifier plus 1d8 for each level of the spell
+      slot expended</strong>, up to a maximum of your pool's total.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The bundled Activity consumes a spell slot of your choice and
+      rolls the recovery formula in chat. The module then automatically
+      decreases your Charnel Touch <em>spent</em> uses by the rolled
+      amount, capped at 0. The "Recovered Points" roll IS the amount
+      applied — no manual adjustment needed.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 3
+  properties: []
+  requirements: ''
+  activities:
+    valdNecDarkArcA1:
+      _id: valdNecDarkArcA1
+      type: utility
+      name: Replenish Pool
+      img: ''
+      sort: 0
+      activation:
+        type: bonus
+        value: 1
+        override: false
+        condition: ''
+      consumption:
+        scaling:
+          allowed: true
+          max: 'min(9, ceil(@classes.necromancer.levels / 2))'
+        spellSlot: false
+        targets:
+          - type: spellSlots
+            value: '1'
+            target: '1'
+            scaling:
+              mode: level
+              formula: ''
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: self
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+        affects:
+          choice: false
+          count: '1'
+          type: self
+          special: ''
+        override: false
+        prompt: false
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      roll:
+        prompt: false
+        visible: true
+        name: Recovered Points
+        formula: '(@scaling)d8 + @abilities.int.mod'
+      appliedEffects: []
+  enchant: {}
+  identifier: dark-arcana
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecDarkArc01'

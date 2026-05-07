@@ -1,0 +1,1078 @@
+name: Deadnaught
+type: npc
+flags:
+  plutonium:
+    page: bestiary.html
+    source: ValdaSpire24
+    hash: deadnaught_valdaspire24
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: 5.3.2
+  createdTime: 1778125385130
+  modifiedTime: 1778125385144
+  lastModifiedBy: 86lXYe8q4tOkxedf
+_id: valdNecDeadnght1
+img: https://cdn.5e.tools/2024/img/blank.webp
+system:
+  currency:
+    pp: 0
+    gp: 0
+    ep: 0
+    sp: 0
+    cp: 0
+  abilities:
+    str:
+      value: 19
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    dex:
+      value: 14
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    con:
+      value: 16
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    int:
+      value: 7
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    wis:
+      value: 10
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+    cha:
+      value: 6
+      proficient: 0
+      max: null
+      bonuses:
+        check: ''
+        save: '0'
+      check:
+        roll:
+          min: null
+          max: null
+          mode: 0
+      save:
+        roll:
+          min: null
+          max: null
+          mode: 0
+  bonuses:
+    mwak:
+      attack: ''
+      damage: ''
+    rwak:
+      attack: ''
+      damage: ''
+    msak:
+      attack: ''
+      damage: ''
+    rsak:
+      attack: ''
+      damage: ''
+    abilities:
+      check: ''
+      save: ''
+      skill: ''
+    spell:
+      dc: ''
+  skills:
+    acr:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ani:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    arc:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ath:
+      ability: str
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    dec:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    his:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ins:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    itm:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    inv:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    med:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    nat:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prc:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    prf:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    per:
+      ability: cha
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    rel:
+      ability: int
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    slt:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    ste:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+    sur:
+      ability: wis
+      roll:
+        min: null
+        max: null
+        mode: 0
+      value: 0
+      bonuses:
+        check: ''
+        passive: ''
+  tools: {}
+  spells:
+    spell1:
+      value: 0
+      override: null
+    spell2:
+      value: 0
+      override: null
+    spell3:
+      value: 0
+      override: null
+    spell4:
+      value: 0
+      override: null
+    spell5:
+      value: 0
+      override: null
+    spell6:
+      value: 0
+      override: null
+    spell7:
+      value: 0
+      override: null
+    spell8:
+      value: 0
+      override: null
+    spell9:
+      value: 0
+      override: null
+    pact:
+      value: 0
+    spell0:
+      value: 0
+  attributes:
+    ac:
+      calc: default
+      flat: null
+    init:
+      ability: dex
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonus: ''
+    movement:
+      units: ft
+      hover: false
+      ignoredDifficultTerrain: []
+      walk: '30'
+      special: ''
+    attunement:
+      max: 3
+    senses:
+      ranges:
+        blindsight: 0
+        darkvision: 60
+        tremorsense: 0
+        truesight: 0
+      units: ft
+      special: ''
+    spellcasting: ''
+    exhaustion: 0
+    concentration:
+      ability: ''
+      roll:
+        min: null
+        max: null
+        mode: 0
+      bonuses:
+        save: ''
+      limit: 1
+    loyalty: {}
+    hd:
+      spent: 0
+    hp:
+      max: 10
+      temp: 0
+      tempmax: 0
+      value: 10
+      formula: ''
+    death:
+      roll:
+        min: null
+        max: null
+        mode: 0
+      success: 0
+      failure: 0
+      bonuses:
+        save: ''
+    price:
+      value: null
+      denomination: gp
+    spell:
+      level: 0
+  details:
+    biography:
+      value: >-
+        <p>An Undead hulk clad in heavy armor, a deadnaught is a Necromancer's
+        most fearsome ally.</p><div data-roll-name-ancestor="Proficiencies"
+        class="ve-rd__b  ve-rd__b--1"><h2 class="ve-rd__h ve-rd__h--1"
+        data-title-index="1"> <span class="entry-title-inner
+        ">Proficiencies</span></h2> <p>Simple and Martial weapons; Light,
+        Medium, and Heavy armor, @item[Shield|XPHB|Shields]. The monster can
+        equip any gear for which it has proficiency or training.</p></div>
+      public: ''
+    alignment: Lawful Evil
+    ideal: ''
+    bond: ''
+    flaw: ''
+    race: null
+    type:
+      custom: Undead (Thrall)
+    habitat:
+      value: []
+      custom: ''
+    cr: 1
+    treasure:
+      value: []
+  resources:
+    legact:
+      max: 0
+      spent: 0
+    legres:
+      max: 0
+      spent: 0
+    lair:
+      value: false
+      initiative: null
+      inside: false
+  source:
+    revision: 1
+    rules: '2024'
+    custom: ''
+    book: VSS'24
+    page: ''
+    license: ''
+  traits:
+    size: med
+    di:
+      value:
+        - poison
+      custom: ''
+      bypasses: []
+    dr:
+      value: []
+      custom: ''
+      bypasses: []
+    dv:
+      value: []
+      custom: ''
+      bypasses: []
+    dm:
+      amount: {}
+      bypasses: []
+    ci:
+      value:
+        - charmed
+        - exhaustion
+        - frightened
+        - poisoned
+      custom: ''
+    languages:
+      value: []
+      custom: understands the languages you know but can't speak
+      communication: {}
+    important: false
+prototypeToken:
+  name: Deadnaught
+  displayName: 20
+  actorLink: false
+  width: 1
+  height: 1
+  texture:
+    src: assets/srd5e/img/blank.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 40
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 60
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: -1
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+  flags: {}
+  randomImg: false
+  appendNumber: false
+  prependAdjective: false
+items:
+  - _id: 87ZR53QO8oLGRI3W
+    name: Multiattack
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: VSS'24
+        page: ''
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="ve-rd__b  ve-rd__b--3"><p>The deadnaught makes two
+          attacks. It makes three attacks when you reach Necromancer level 13,
+          and four attacks when you reach Necromancer level 17.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: {}
+      activities:
+        dnd5eactivity003:
+          _id: dnd5eactivity003
+          type: utility
+          img: null
+          activation:
+            type: action
+            value: 1
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+              stationary: false
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          roll:
+            prompt: false
+            visible: false
+          sort: 0
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+      identifier: multiattack
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+    ownership:
+      default: 0
+      86lXYe8q4tOkxedf: 3
+    img: icons/skills/melee/strike-weapons-orange.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: ValdaSpire24
+        hash: multiattack_deadnaught_valdaspire24_valdaspire24
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.2
+      createdTime: 1778125385160
+      modifiedTime: 1778125385160
+      lastModifiedBy: 86lXYe8q4tOkxedf
+    folder: null
+    sort: 0
+    _key: '!actors.items!valdNecDeadnght1.87ZR53QO8oLGRI3W'
+  - _id: vOmYld44PYWpZCDj
+    name: Warhammer
+    type: weapon
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '215'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="ve-rd__b  ve-rd__b--3"><p><i>Melee Attack Roll:</i> [[/r
+          1d20 + @srd5e.userchar.spellAttackRanged]]{ Bonus equals your spell
+          attack modifier}, reach 5 ft. <i>Hit:</i> [[/damage 1d10 + 4
+          type=bludgeoning]] damage.</p></div>
+        chat: ''
+      range:
+        value: null
+        long: null
+        reach: 5
+        units: ft
+      proficient: 1
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      type:
+        value: martialM
+        baseItem: warhammer
+      properties:
+        - gear
+        - ver
+        - gear
+      activities:
+        dnd5eactivity000:
+          _id: dnd5eactivity000
+          type: attack
+          name: ''
+          activation:
+            type: action
+            value: 1
+            override: false
+          target:
+            prompt: true
+            template:
+              contiguous: false
+              stationary: false
+              units: ft
+            affects:
+              choice: false
+            override: false
+          attack:
+            flat: true
+            type:
+              value: melee
+              classification: ''
+            ability: none
+            bonus: + @srd5e.userchar.spellAttackRanged
+            critical: {}
+          damage:
+            parts:
+              - types:
+                  - bludgeoning
+                number: 1
+                denomination: 10
+                bonus: '4'
+                scaling:
+                  mode: ''
+                  number: 1
+                custom:
+                  enabled: false
+            critical: {}
+            includeBase: true
+          img: null
+          sort: 0
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          flags: {}
+          range:
+            units: self
+            override: false
+          uses:
+            spent: 0
+            recovery: []
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+      rarity: ''
+      identified: true
+      equipped: true
+      attunement: ''
+      price:
+        value: 15
+        denomination: gp
+      quantity: 1
+      weight:
+        value: 5
+        units: lb
+      ammunition:
+        type: ''
+      mastery: push
+      armor: {}
+      identifier: warhammer
+      unidentified:
+        description: ''
+      container: null
+      attuned: false
+      crew:
+        value: []
+      damage:
+        base:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+        versatile:
+          types: []
+          custom:
+            enabled: false
+          scaling:
+            number: 1
+    ownership:
+      default: 0
+      86lXYe8q4tOkxedf: 3
+    img: https://cdn.5e.tools/2024/img/items/XPHB/Warhammer.webp
+    flags:
+      plutonium:
+        page: monsterAction
+        source: ValdaSpire24
+        hash: warhammer_deadnaught_valdaspire24_valdaspire24
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.2
+      createdTime: 1778125386591
+      modifiedTime: 1778125386591
+      lastModifiedBy: 86lXYe8q4tOkxedf
+    folder: null
+    sort: 0
+    _key: '!actors.items!valdNecDeadnght1.vOmYld44PYWpZCDj'
+  - _id: B3jthI4tbfHCFAdh
+    name: Necromantic Bond
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: VSS'24
+        page: ''
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="ve-rd__b  ve-rd__b--3"><p>You can only animate and control
+          a deadnaught once you reach Necromancer level 7. While you control a
+          deadnaught, you can't control other thralls.</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: {}
+      activities: {}
+      identifier: necromantic-bond
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+    ownership:
+      default: 0
+      86lXYe8q4tOkxedf: 3
+    img: systems/dnd5e/icons/svg/items/feature.svg
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: ValdaSpire24
+        hash: necromantic%20bond_deadnaught_valdaspire24_valdaspire24
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.2
+      createdTime: 1778125386608
+      modifiedTime: 1778125386608
+      lastModifiedBy: 86lXYe8q4tOkxedf
+    folder: null
+    sort: 0
+    _key: '!actors.items!valdNecDeadnght1.B3jthI4tbfHCFAdh'
+  - _id: fl1Elp3Jn4V0GzAQ
+    name: Regeneration
+    type: feat
+    system:
+      source:
+        custom: ''
+        book: VSS'24
+        page: ''
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: >-
+          <div class="ve-rd__b  ve-rd__b--3"><p>The deadnaught regains 5
+          @variantrule[Hit Points|XPHB] at the start of each of its turns if it
+          has at least 1 @variantrule[Hit Points|XPHB|Hit Point].</p></div>
+        chat: ''
+      requirements: ''
+      uses:
+        max: ''
+        recovery: []
+        spent: 0
+      type:
+        value: monster
+        subtype: ''
+      properties: []
+      advancement: {}
+      activities:
+        dnd5eactivity002:
+          _id: dnd5eactivity002
+          type: heal
+          name: ''
+          img: null
+          activation:
+            type: ''
+            override: false
+          consumption:
+            scaling:
+              allowed: false
+            spellSlot: true
+            targets: []
+          description: {}
+          duration:
+            units: inst
+            concentration: false
+            override: false
+          effects: []
+          range:
+            units: self
+            override: false
+          target:
+            template:
+              contiguous: false
+              units: ft
+              stationary: false
+            affects:
+              choice: false
+            override: false
+            prompt: true
+          uses:
+            spent: 0
+            recovery: []
+          healing:
+            types:
+              - healing
+            custom:
+              enabled: true
+              formula: '5'
+            scaling:
+              number: 1
+          sort: 0
+          flags: {}
+          visibility:
+            level: {}
+            requireAttunement: false
+            requireIdentification: false
+            requireMagic: false
+      identifier: regeneration
+      crewed: false
+      enchant: {}
+      prerequisites:
+        items: []
+        repeatable: false
+    ownership:
+      default: 0
+      86lXYe8q4tOkxedf: 3
+    img: icons/magic/life/heart-cross-strong-purple-orange.webp
+    flags:
+      plutonium:
+        page: monsterTrait
+        source: ValdaSpire24
+        hash: regeneration_deadnaught_valdaspire24_valdaspire24
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.2
+      createdTime: 1778125386620
+      modifiedTime: 1778125386620
+      lastModifiedBy: 86lXYe8q4tOkxedf
+    folder: null
+    sort: 0
+    _key: '!actors.items!valdNecDeadnght1.fl1Elp3Jn4V0GzAQ'
+  - _id: s2yupu8Bjgn3j7wB
+    name: Chain Mail
+    type: equipment
+    system:
+      source:
+        custom: ''
+        book: PHB 2024
+        page: '219'
+        license: ''
+        rules: '2024'
+        revision: 1
+      description:
+        value: <div class="ve-rd__b  ve-rd__b--2"></div>
+        chat: ''
+      proficient: 1
+      quantity: 1
+      weight:
+        value: 55
+        units: lb
+      price:
+        value: 75
+        denomination: gp
+      attuned: false
+      identified: true
+      equipped: true
+      rarity: ''
+      type:
+        value: heavy
+        baseItem: chainmail
+      properties:
+        - gear
+        - stealthDisadvantage
+        - gear
+      attunement: ''
+      uses:
+        max: ''
+        spent: 0
+        recovery: []
+      armor:
+        value: 16
+        dex: 0
+      strength: 13
+      activities: {}
+      identifier: chain-mail
+      unidentified:
+        description: ''
+      container: null
+      crew:
+        value: []
+    img: https://cdn.5e.tools/2024/img/items/XPHB/Chain%20Mail.webp
+    ownership:
+      default: 0
+      86lXYe8q4tOkxedf: 3
+    flags:
+      plutonium:
+        page: items.html
+        source: XPHB
+        hash: chain%20mail_xphb
+    effects: []
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: dnd5e
+      systemVersion: 5.3.2
+      createdTime: 1778125386634
+      modifiedTime: 1778125386634
+      lastModifiedBy: 86lXYe8q4tOkxedf
+    folder: null
+    sort: 0
+    _key: '!actors.items!valdNecDeadnght1.s2yupu8Bjgn3j7wB'
+effects: []
+folder: valdNecTFolder01
+sort: 0
+ownership:
+  default: 0
+  86lXYe8q4tOkxedf: 3
+_key: '!actors!valdNecDeadnght1'

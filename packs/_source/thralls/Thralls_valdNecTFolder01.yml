@@ -1,0 +1,9 @@
+_id: valdNecTFolder01
+name: Necromancer Thralls
+type: Actor
+folder: null
+sorting: a
+sort: 0
+color: null
+flags: {}
+_key: '!folders!valdNecTFolder01'

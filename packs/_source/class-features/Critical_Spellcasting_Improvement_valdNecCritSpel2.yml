@@ -1,0 +1,93 @@
+_id: valdNecCritSpel2
+name: Improved Critical Spellcasting
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 650000
+ownership:
+  default: 0
+flags:
+  necromancer-class-valdas:
+    feature: critical-spellcasting-improvement
+effects:
+  - _id: valdNecCritSpAE2
+    name: Critical Spellcasting (Spell Crit Threshold 18+)
+    img: icons/svg/upgrade.svg
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: ''
+    statuses: []
+    description: ''
+    flags: {}
+    changes:
+      - key: flags.dnd5e.spellCriticalThreshold
+        value: '18'
+        mode: 5
+        priority: 100
+    tint: null
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!valdNecCritSpel2.valdNecCritSpAE2'
+system:
+  description:
+    value: >
+      <p>Your <em>Critical Spellcasting</em> feature improves in the
+      following ways.</p>
+
+      <p><strong>Critical Failures.</strong> A creature suffers a
+      Critical Failure when it rolls a <strong>1 or 2</strong> on the
+      d20 for a saving throw against one of your spells.</p>
+
+      <p><strong>Improved Critical.</strong> Your spell attacks now
+      score a critical hit on a roll of <strong>18&ndash;20</strong>
+      on the d20.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>This feature carries an Active Effect (priority 100) that
+      overrides the L5 effect, lowering your spell crit threshold to
+      18. The Critical Failures threshold raise (1 or 2) is detected
+      automatically by the module's JS hook — the same Critical
+      Spellcasting chat card posts when a creature rolls a 1 or 2 on
+      a save against one of your spells.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 14
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: critical-spellcasting-improvement
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecCritSpel2'

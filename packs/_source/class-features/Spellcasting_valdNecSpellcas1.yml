@@ -1,0 +1,89 @@
+_id: valdNecSpellcas1
+name: Spellcasting
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 100000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>Though it steadily burns away your very soul, you can cast
+      necromantic spells.</p>
+
+      <p><strong>Cantrips.</strong> You know <strong>three</strong>
+      Necromancer cantrips of your choice from the Necromancer spell list.
+      Whenever you gain a Necromancer level, you can replace one of your
+      cantrips with another from the Necromancer spell list. When you reach
+      Necromancer levels 4 and 10, you learn another cantrip of your
+      choice, as shown in the <em>Cantrips</em> column of the Necromancer
+      table.</p>
+
+      <p><strong>Spell Slots.</strong> The Necromancer table shows how many
+      spell slots you have to cast your level 1+ spells. You regain all
+      expended slots when you finish a Long Rest.</p>
+
+      <p><strong>Prepared Spells of Level 1+.</strong> You prepare the
+      list of level 1+ spells that are available for you to cast with this
+      feature. To start, choose <strong>four</strong> level 1 Necromancer
+      spells. The number of spells on your list increases as you gain
+      Necromancer levels, as shown in the <em>Prepared Spells</em> column
+      of the Necromancer table. Each chosen spell must be of a level for
+      which you have spell slots.</p>
+
+      <p>If another Necromancer feature gives you spells that you always
+      have prepared, those spells don't count against the number of spells
+      you can prepare with this feature, but they otherwise count as
+      Necromancer spells for you.</p>
+
+      <p><strong>Changing Your Prepared Spells.</strong> Whenever you gain
+      a Necromancer level, you can replace one spell on your list with
+      another Necromancer spell for which you have spell slots.</p>
+
+      <p><strong>Spellcasting Ability.</strong> Intelligence is your
+      spellcasting ability for your Necromancer spells.</p>
+
+      <p><em>Spell save DC</em> = 8 + your proficiency bonus + your
+      Intelligence modifier</p>
+
+      <p><em>Spell attack modifier</em> = your proficiency bonus + your
+      Intelligence modifier</p>
+
+      <p><strong>Spellcasting Focus.</strong> You can use an Arcane Focus
+      as a Spellcasting Focus for your Necromancer spells.</p>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 1
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: spellcasting
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecSpellcas1'

@@ -1,0 +1,273 @@
+_id: valdNecThralls01
+name: Thralls
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 300000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>Unlike other spellcasters, you animate Undead creatures with a
+      portion of your own life force, ensuring obedience.</p>
+
+      <p><strong>Animate Thralls.</strong> You can animate Undead thralls
+      by performing a ritual over the course of <strong>10 minutes</strong>,
+      which can be done during a Short Rest. The remains of one or more
+      Medium or Small Humanoids within 30 feet of yourself rise as Undead
+      creatures. These Undead become your thralls, and you maintain
+      control over them indefinitely.</p>
+
+      <p><strong>Available thrall stat blocks</strong> (from this module's
+      <em>Necromancer Thralls</em> compendium):</p>
+
+      <ul>
+      <li>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecBloodlrk1]{Bloodlurk} — CR 2</li>
+      <li>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecBonebst01]{Bone Beast} — CR 1</li>
+      <li>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecDeadnght1]{Deadnaught} — CR 1</li>
+      <li>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecGorger001]{Gorger} — CR 1</li>
+      <li>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecSkelet001]{Skeleton} — CR 1/4</li>
+      <li>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecSpirit001]{Spirit} — CR 1/4</li>
+      <li>@UUID[Compendium.necromancer-class-valdas.thralls.Actor.valdNecZombie001]{Zombie} — CR 1/4</li>
+      </ul>
+
+      <p><strong>Combat.</strong> You can mentally control all your
+      thralls without an action. If you have the <em>Incapacitated</em>
+      condition, your thralls move to protect your body from harm but
+      won't attack.</p>
+
+      <p>In combat, your thralls take their turns immediately before or
+      after your turn each round (your choice). All thralls collectively
+      share <strong>one Reaction and one Bonus Action</strong> per round,
+      which a single thrall can use.</p>
+
+      <p><strong>Attacks and Save DCs.</strong> Thralls use <strong>your
+      spell attack modifier</strong> for their attacks. If one of your
+      thralls forces a creature to make a saving throw, it uses
+      <strong>your spell save DC</strong>.</p>
+
+      <p><strong>Healing your Thralls.</strong> You can use your
+      <em>Charnel Touch</em> on Undead under your control without making
+      an attack roll. Instead of dealing Necrotic damage, the Undead
+      regains hit points equal to the number of Charnel Touch points
+      expended.</p>
+
+      <p><strong>Maximum Thralls.</strong> At 2nd level you can animate
+      and control one thrall of CR 1/4. As you gain Necromancer levels,
+      you can animate more thralls. The combined CR of all your thralls
+      can't exceed the value in the <em>CR Total</em> column of the
+      Necromancer table, and the total number of thralls under your
+      control can't exceed the value in the <em>Thralls</em> column.</p>
+
+      <p>At any time, you can take a Magic action to sever your connection
+      to one or more thralls. Corporeal Undead crumple into a heap and
+      incorporeal Undead flee to the Ethereal Plane.</p>
+
+      <p><strong>Other Undead.</strong> When you cast <em>animate dead</em>,
+      <em>create undead</em>, or another spell that lets you create or
+      control Undead, those Undead count as your thralls and can be
+      commanded as such. If they exceed your CR or thrall-count limits,
+      you can immediately sever your connection to existing thralls to
+      stay within the limits. Your thralls can never command or create
+      other Undead.</p>
+
+      <p>You can't reanimate Undead that have been reduced to 0 hit
+      points. Your Animate Thralls ritual, the <em>animate dead</em>
+      spell, and similar magic only affect Humanoid corpses; the
+      resulting thralls are Undead creatures.</p>
+
+      <section class="secret"><p><strong>Necromancer Variant Rules</strong></p>
+
+      <p><strong>Necromancy Unleashed.</strong> In order to ensure timely,
+      balanced play, this class imposes limitations on the number of
+      Undead a player can command, including with spells such as
+      <em>animate dead</em>. Use this variant rule if you want to throw
+      caution to the wind and embrace the undead horde experience: ignore
+      the "Other Undead" section above. Undead animated with spells are
+      separate from your thralls for the purposes of your class features
+      and have no other class-based limitations.</p>
+
+      <p><strong>Alternate Necromancers.</strong> Necromancers may fuel
+      their spellcasting through ambition or zeal rather than intellect.
+      When you become a Necromancer, you can choose <strong>Wisdom or
+      Charisma</strong> for the Primary Ability in the Core Necromancer
+      Traits. The chosen ability becomes your spellcasting ability and
+      replaces any Necromancer feature that uses Intelligence. A
+      Necromancer that uses Wisdom is called a "Resurrectionist"; one
+      that uses Charisma is called a "Ghoul."</p></section>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The thralls cap (count and CR) is exposed via the
+      <code>@scale.necromancer.thralls-max</code> and
+      <code>@scale.necromancer.thrall-cr</code> scale values on the
+      class. Track manually — the module does not enforce the limit
+      automatically.</p>
+      <p>The "Healing your Thralls" mechanic is implemented as the
+      <em>Heal Undead</em> activity on your <em>Charnel Touch</em>
+      feature.</p></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 2
+  properties: []
+  requirements: ''
+  activities:
+    valdNecThrSumn01:
+      _id: valdNecThrSumn01
+      type: summon
+      name: Animate Thralls
+      img: ''
+      sort: 0
+      activation:
+        type: minute
+        value: 10
+        override: false
+        condition: with a spellcasting focus or component pouch
+      consumption:
+        scaling:
+          allowed: false
+          max: ''
+        spellSlot: false
+        targets: []
+      description:
+        chatFlavor: ''
+      duration:
+        units: inst
+        concentration: false
+        override: false
+      effects: []
+      range:
+        override: false
+        units: ft
+        value: 30
+        special: ''
+      target:
+        template:
+          contiguous: false
+          units: ft
+          type: ''
+          stationary: false
+        affects:
+          choice: false
+          count: ''
+          type: ''
+          special: ''
+        override: false
+        prompt: true
+      uses:
+        spent: 0
+        recovery: []
+        max: ''
+      bonuses:
+        ac: ''
+        hd: ''
+        hp: ''
+        attackDamage: ''
+        saveDamage: ''
+        healing: ''
+      creatureSizes: []
+      creatureTypes: []
+      match:
+        attacks: false
+        disposition: true
+        proficiency: false
+        saves: false
+        ability: ''
+      profiles:
+        - _id: valdNecBldlkProf
+          count: '1'
+          name: Bloodlurk (CR 2)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecBloodlrk1
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecBnbstProf
+          count: '1'
+          name: Bone Beast (CR 1)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecBonebst01
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecDdngtProf
+          count: '1'
+          name: Deadnaught (CR 1)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecDeadnght1
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecGorgrProf
+          count: '1'
+          name: Gorger (CR 1)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecGorger001
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecSkeltProf
+          count: '1'
+          name: Skeleton (CR 1/4)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecSkelet001
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecSprtsProf
+          count: '1'
+          name: Spirit (CR 1/4)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecSpirit001
+          level:
+            min: null
+            max: null
+          types: []
+        - _id: valdNecZombsProf
+          count: '1'
+          name: Zombie (CR 1/4)
+          uuid: Compendium.necromancer-class-valdas.thralls.Actor.valdNecZombie001
+          level:
+            min: null
+            max: null
+          types: []
+      summon:
+        mode: ''
+        prompt: true
+      visibility:
+        level:
+          min: null
+          max: null
+        requireAttunement: false
+        requireIdentification: false
+        requireMagic: false
+      tempHP: ''
+      appliedEffects: []
+  enchant: {}
+  identifier: thralls
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecThralls01'

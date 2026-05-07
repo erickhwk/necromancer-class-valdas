@@ -1,0 +1,92 @@
+_id: valdNecDespDisc1
+name: Despotic Discourse
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecOFolder01
+sort: 200000
+ownership:
+  default: 0
+flags: {}
+effects:
+  - _id: valdNecDespDscAE
+    name: Despotic Discourse (INT-mod bonus to Social Skills)
+    img: icons/svg/upgrade.svg
+    transfer: true
+    disabled: false
+    duration:
+      startTime: null
+      seconds: null
+      combat: null
+      rounds: null
+      turns: null
+      startRound: null
+      startTurn: null
+    origin: ''
+    statuses: []
+    description: '<p>+max(@abilities.int.mod, 1) to Charisma (Deception, Intimidation, Persuasion) checks.</p>'
+    flags: {}
+    changes:
+      - key: system.skills.dec.bonuses.check
+        value: '+max(@abilities.int.mod, 1)'
+        mode: 2
+        priority: null
+      - key: system.skills.itm.bonuses.check
+        value: '+max(@abilities.int.mod, 1)'
+        mode: 2
+        priority: null
+      - key: system.skills.per.bonuses.check
+        value: '+max(@abilities.int.mod, 1)'
+        mode: 2
+        priority: null
+    tint: null
+    type: base
+    system: {}
+    sort: 0
+    _key: '!items.effects!valdNecDespDisc1.valdNecDespDscAE'
+system:
+  description:
+    value: >
+      <p>You gain a bonus to Charisma (<strong>Deception,
+      Intimidation, and Persuasion</strong>) checks equal to your
+      <strong>Intelligence modifier</strong> (minimum bonus of
+      <strong>+1</strong>).</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>The bonus is applied automatically via an Active Effect that
+      adds <code>max(@abilities.int.mod, 1)</code> to the check bonus
+      of Deception, Intimidation, and Persuasion. Disable the effect
+      on the sheet's Effects tab to revert.</p>
+      </section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: subclass
+    subtype: ''
+  prerequisites:
+    level: 6
+  properties: []
+  requirements: Necromancer 6 (Overlord)
+  activities: {}
+  enchant: {}
+  identifier: despotic-discourse
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecDespDisc1'

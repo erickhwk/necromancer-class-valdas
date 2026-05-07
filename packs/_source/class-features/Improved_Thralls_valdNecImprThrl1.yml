@@ -1,0 +1,77 @@
+_id: valdNecImprThrl1
+name: Improved Thralls
+type: feat
+img: icons/svg/upgrade.svg
+folder: valdNecCFolder01
+sort: 700000
+ownership:
+  default: 0
+flags: {}
+effects: []
+system:
+  description:
+    value: >
+      <p>Your <em>Thralls</em> grow stronger under your control, granting
+      the following benefits.</p>
+
+      <p><strong>Avoidance.</strong> If one of your thralls is subjected
+      to an effect that allows it to make a saving throw to take only
+      half damage, it instead takes <strong>no damage</strong> if it
+      succeeds on the saving throw, and only half damage if it fails.</p>
+
+      <p><strong>Necrotic Damage.</strong> Whenever one of your thralls
+      deals <strong>Bludgeoning, Piercing, or Slashing damage</strong>,
+      you can make it deal <strong>Necrotic damage</strong> instead.</p>
+
+      <p><strong>Turn Immunity.</strong> Your thralls have <strong>Immunity
+      to the Charmed and Frightened conditions</strong>, and are immune
+      to effects that turn Undead.</p>
+
+      <section class="secret"><p><strong>Foundry Note</strong></p>
+      <p>This feature is currently <strong>descriptive</strong>. The
+      three benefits affect your thrall actors, not the necromancer
+      character. Apply manually as follows:</p>
+      <ul>
+      <li><em>Avoidance</em>: when a thrall succeeds on a "half-on-save"
+      effect, manually set the damage to 0 (instead of half).</li>
+      <li><em>Necrotic Damage</em>: tick the damage type to Necrotic
+      on the thrall's attack damage roll dialog when desired.</li>
+      <li><em>Turn Immunity</em>: open each thrall's sheet and add
+      <code>Charmed</code> and <code>Frightened</code> to its Condition
+      Immunities (the 2024 SRD thrall stat blocks shipped with this
+      module ALREADY include these immunities by default once the
+      thralls compendium update lands).</li>
+      </ul></section>
+    chat: ''
+  source:
+    book: Valda's Spires of Secrets
+    page: ''
+    custom: ''
+    license: Fan Content Policy
+    rules: '2024'
+    revision: 1
+  uses:
+    max: ''
+    spent: 0
+    recovery: []
+  type:
+    value: class
+    subtype: ''
+  prerequisites:
+    level: 7
+  properties: []
+  requirements: ''
+  activities: {}
+  enchant: {}
+  identifier: improved-thralls
+_stats:
+  coreVersion: '13.351'
+  systemId: dnd5e
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+_key: '!items!valdNecImprThrl1'
